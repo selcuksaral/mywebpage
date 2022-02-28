@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Selcuk Saral'ın Web Sitesi</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="/" class="nav__logo">Selcuk SARAL</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link ">Ana Sayfa</a></li>
+                        <li class="nav__item"><a href="/about.html" class="nav__link">Hakkında</a></li>
+                        <li class="nav__item"><a href="/skills.html" class="nav__link active">Beceriler</a></li>
+                        <li class="nav__item"><a href="/work.html" class="nav__link">Çalışmalar</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+           
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profosyonel Beceriler</h2>
+                        <p class="skills__text">Aşağıdaki linklere tıklarsanız ayrıntılı bilgilere ulaşabilirsiniz..</p>
+                        <div class="skills__data" id="html5">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data" id="css">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data" id="js">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data" id="other">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img id="genel" style="display:block" src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <a class="skills_img" id="html_show" style="display: none;">Hiper Metin İşaretleme Dili web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir. Dilin son sürümü HTML5'tir. HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına çalışan bir program yazılamaz. </a>
+                        <a class="skills_img" id="css_show" style="display: none;">İngilizceden çevrilmiştir-"JSS", 18 Ekim 2015'te AMC'de yayınlanan kıyamet sonrası korku televizyon dizisi The Walking Dead'in altıncı sezonunun ikinci bölümüdür. Bölüm Seth Hoffman tarafından yazılmış ve Jennifer Lynch tarafından yönetilmiştir.</a>
+                        <a class="skills_img" id="js_show" style="display: none;">fdeddftdtdrt</a>
+                        <img style="display:block" id="jsresim" src="assets/img/Java.jpg" alt="" class="skills__img">
+                        <a class="skills_img" id="other_show" style="display: none;">Avrupa Birliği Eğitim ve Gençlik Programları Merkezi Başkanlığı olarak da bilinen bir kurum olup Avrupa Birliği Bakanlığı bünyesinde faaliyet göstermektedir. Devletin bir kurumudur ve merkezi Ankara'dadır.</a>
+                    </div>
+                </div>
+            </section>
+
+        
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" style="position: fixed; bottom: 0px; left: 0px; width: 100%; height: 50px; padding: 15px;">
+           
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            document.getElementById("html5").addEventListener("click", function() {
+              document.getElementById("html_show").style.display = "block";
+              document.getElementById("genel").style.display = "none";
+              document.getElementById("other_show").style.display = "none";
+              document.getElementById("css_show").style.display = "none";
+              document.getElementById("js_show").style.display = "none";
+              document.getElementById("jsresim").style.display = "none";
+            });
+    
+            document.getElementById("css").addEventListener("click", function() {
+              document.getElementById("genel").style.display = "none";
+              document.getElementById("other_show").style.display = "none";
+              document.getElementById("css_show").style.display = "block";
+              document.getElementById("js_show").style.display = "none";
+              document.getElementById("html_show").style.display = "none";
+              document.getElementById("jsresim").style.display = "none";
+            });
+            
+            document.getElementById("js").addEventListener("click", function() {
+              document.getElementById("genel").style.display = "none";
+              document.getElementById("js_show").style.display = "block";
+              document.getElementById("other_show").style.display = "none";
+              document.getElementById("css_show").style.display = "none";
+              document.getElementById("jsresim").style.display = "block";
+              document.getElementById("html_show").style.display = "none";
+            });
+
+            document.getElementById("other").addEventListener("click", function() {
+              document.getElementById("genel").style.display = "none";
+              document.getElementById("other_show").style.display = "block";
+              document.getElementById("css_show").style.display = "none";
+              document.getElementById("js_show").style.display = "none";
+              document.getElementById("html_show").style.display = "none";
+              document.getElementById("jsresim").style.display = "none";
+            });
+            </script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
